@@ -1,3 +1,10 @@
+# Here is my `server`/`.vscode`/`settings.json`!
+
+### settings.json
+
+**USAGE**: Make a folder in the _root_ of the folder you desire to have these settings in called `.vscode`, inside of the folder you will be making a `settings.json` to place these settings in.
+
+```js
 {
   "workbench.colorCustomizations": {
     "titleBar.activeForeground": "#fff",
@@ -18,3 +25,5 @@
   },
   "prettier.disableLanguages": ["javascript", "javascriptreact"]
 }
+
+```
