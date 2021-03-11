@@ -52,6 +52,7 @@
   "files.trimTrailingWhitespace": true,
   "editor.linkedEditing": true,
   "editor.fontWeight": "400",
+  "editor.multiCursorModifier": "ctrlCmd",
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 5,
   "editor.formatOnSave": true,
@@ -69,14 +70,13 @@
   "mssql.connections": [
     {
       "server": "localhost:3306",
-      "database": "DATABASE NAME",
+      "database": "VS-DB",
       "user": "root",
-      "password": "YOUR PASSWORD"
+      "password": "password"
     }
   ],
   "kite.showWelcomeNotificationOnStartup": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "window.zoomLevel": -1
 }
-
 ```
