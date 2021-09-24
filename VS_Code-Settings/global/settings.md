@@ -80,3 +80,40 @@
   "window.zoomLevel": -1
 }
 ```
+
+# Bash RC
+
+```
+export OSH=/home/nate/.oh-my-bash
+
+OSH_THEME="mairan"
+
+CASE_SENSITIVE="true"
+
+ENABLE_CORRECTION="true"
+
+completions=(
+  git
+  composer
+  ssh
+)
+
+aliases=(
+  general
+)
+
+plugins=(
+  git
+  bashmarks
+)
+
+source $OSH/oh-my-bash.sh
+
+alias kill_all_docker="ps axf | grep docker | grep -v grep | awk '{print \"kill -9 \" $1}' | sudo sh"
+alias microservices="cd '/media/nate/Shared Drive/Shared Data/Work/Nerd Power/code/mircoservices'; code .; exit"
+alias models="cd '/media/nate/Shared Drive/Shared Data/Work/Nerd Power/code/model-layers'; code .; exit"
+alias client="cd '/media/nate/Shared Drive/Shared Data/Work/Nerd Power/code/client/nerd-sales-app'; code .; exit"
+alias trilogy="cd '/media/nate/Shared Drive/Shared Data/Work/Trilogy'; code .; exit"
+alias aquarium="cd '/media/nate/Shared Drive/Shared Data/Current Projects'; perl aquarium.pl"
+alias dockerswap="sudo sytemctl stop docker; ps axf | grep docker | grep -v grep | awk '{print \"kill -9 \" $1}' | sudo sh; sudo rm -r /var/run/docker.pid; sudo dockerd"
+```
